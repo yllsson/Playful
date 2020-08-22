@@ -1,63 +1,146 @@
-/* I've added borders to some elements to help me with visualising the html positioning, this should be removed later on.
-I've marked these borders with a commented !! in the code so you can find them easier :) */
 
 /* General page code */
 
 body {
   margin: 0;
   padding: 0;
+  
+  /* background-color: #152238; */
+  background-color: #272727;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #333333;
 }
 
 
 /* Navbar styling */
 
+nav {
+  height: 100%;
+}
+
 .navContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
+
 }
 
 .navLi {
   display: inline-block;
   margin-right: 20px;
-  border: 1px solid black; /* !! */
   padding: 10px;
+
+  background-color: rgb(255, 196, 0);
 }
 
 a {
   text-decoration: none;
+  color: #333333;
+  
 }
 
 
 /* Main content, Image and Form styling */
 
+/* Overall Image styling */
 .imgContainer {
   position: relative;
   display: flex;
-  border: 1px solid red; /* !! */
+
   height: 80vh;
   justify-content: center;
   align-items: stretch;
 }
 
-.imgContainer img {
-  border: 1px solid blue; /* !! */
+.frontPageImages {
   width: 15vw;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+
+
+
+/* Individual images */
+
+.hamilton {
+  background-image: 
+    linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+    ),
+    url("../pics/hamilton2.jpg");
+}
+
+.lionKing {
+  background-image: 
+    linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+    ),
+    url("../pics/lionKing.jpg");
+}
+
+.bookOfMormon {
+  background-image: 
+  linear-gradient(
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4)
+  ),
+  url("../pics/bookOfMormon.jpg");
+}
+
+.wicked {
+  background-image: 
+  linear-gradient(
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4)
+  ),
+  url("../pics/wicked.jpg");
+}
+
+
+/* hovering over individual images */
+
+.hamilton:hover {
+  background-image: url("../pics/hamilton2.jpg");
+}
+.lionKing:hover {
+  background-image: url("../pics/lionKing.jpg");
+}
+.bookOfMormon:hover {
+  background-image: url("../pics/bookOfMormon.jpg");
+}
+.wicked:hover {
+  background-image: url("../pics/wicked.jpg");
+}
+
+
+
+/* The form */
+
+.formContainer {
+  /* this code is to center the form on top of the image divs*/
+  position: absolute;
+  align-self: center;
+  padding: 10px;
+
+  /* this code is to position the search bar and calendar properly in the form container */ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
 
-.imgContainer form {
-  position: absolute;
-  top: 50%;
-  left: auto;
-  padding: 10px;
-  
-  border: 1px solid purple; /* !! */
+input {
+  margin: 10px;
+  padding: 5px;
 }
 
 
 /* Footer styling */
 
 footer {
-  border: 1px solid green;
+  
 }
