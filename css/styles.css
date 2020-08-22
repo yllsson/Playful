@@ -1,0 +1,63 @@
+/* I've added borders to some elements to help me with visualising the html positioning, this should be removed later on.
+I've marked these borders with a commented !! in the code so you can find them easier :) */
+
+/* General page code */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Navbar styling */
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.navLi {
+  display: inline-block;
+  margin-right: 20px;
+  border: 1px solid black; /* !! */
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Main content, Image and Form styling */
+
+.imgContainer {
+  position: relative;
+  display: flex;
+  border: 1px solid red; /* !! */
+  height: 80vh;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.imgContainer img {
+  border: 1px solid blue; /* !! */
+  width: 15vw;
+  object-fit: cover;
+
+}
+
+.imgContainer form {
+  position: absolute;
+  top: 50%;
+  left: auto;
+  padding: 10px;
+  
+  border: 1px solid purple; /* !! */
+}
+
+
+/* Footer styling */
+
+footer {
+  border: 1px solid green;
+}
