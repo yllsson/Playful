@@ -21,15 +21,18 @@
         <div class="bookOfMormon frontPageImages"></div>
         <div class="wicked frontPageImages"></div>
         
-        <!-- <img src="pics/hamilton2.jpg" alt="Hamilton">
-        <img src="pics/lionKing.jpg" alt="The Lion King">
-        <img src="pics/bookOfMormon.jpg" alt="">
-        <img src="pics/wicked.jpg" alt=""> -->
 
         <form class="formContainer">
+          <select id="play" name="play">
+            <option>Pick your play</option>
+            <option value="hamilton">Hamilton</option>
+            <option value="theLionKing">The Lion King</option>
+            <option value="theBookOfMormon">The Book of Mormon</option>
+            <option value="wicked">Wicked</option>
+          </select>
           <input type="date">          
 
-          <input type="search">
+          <!-- Do we need the search field if we already have a dropdown? <input type="search"> -->
           <input type="submit">
         </form>
       </div>
@@ -37,10 +40,8 @@
     </main>
 
     <footer>
-      <ul>
-        <li><a href="">temp</a></li>
-        <li><a href="">temp</a></li>
-        <li><a href="">temp</a></li>
+      <ul class="footerContainer">
+        <li class="footerLi">August 2020</li> 
       </ul>
     </footer>
   </body>
