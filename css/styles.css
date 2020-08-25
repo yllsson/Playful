@@ -140,7 +140,7 @@ select {
   height: 5vh;
 }
 
-input {
+.formInput {
   margin: 10px 0;
   height: 5vh;
 }

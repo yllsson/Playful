@@ -23,17 +23,18 @@
         
 
         <form class="formContainer">
-          <select id="play" name="play">
-            <option>Pick your play</option>
+          <select class="formInput" id="play" name="play">
+            <option value="">Pick your play</option>
             <option value="hamilton">Hamilton</option>
             <option value="theLionKing">The Lion King</option>
             <option value="theBookOfMormon">The Book of Mormon</option>
             <option value="wicked">Wicked</option>
           </select>
-          <input type="date">          
+          <input type="date" class="formInput">          
 
           <!-- Do we need the search field if we already have a dropdown? <input type="search"> -->
-          <input type="submit">
+          <button type="button" class="formInput" onClick='goToBooking()'>Submit</button>
+
         </form>
       </div>
 
