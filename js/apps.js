@@ -49,10 +49,13 @@ document.addEventListener("DOMContentLoaded", function() {
             lionKing.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pics/lionKing.jpg)";
             bookOfMormon.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pics/bookOfMormon.jpg)";
             wicked.style.backgroundImage = "url(pics/wicked.jpg)";
-
             break;
 
-            default: console.log("Missing case", ddValue);
+            default:
+            hamilton.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pics/hamilton2.jpg)";
+            lionKing.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pics/lionKing.jpg)";
+            bookOfMormon.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pics/bookOfMormon.jpg)";
+            wicked.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pics/wicked.jpg)";;
         }
 
     });
