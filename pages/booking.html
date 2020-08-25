@@ -2,6 +2,10 @@
 <html>
   <head>
     <title>Playful</title>
+     <!-- Responsive meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/apps.js"></script>
   </head>
@@ -15,15 +19,99 @@
     </nav>
 
     <main>
-
-    </main>
+ <!-- Booking Form -->
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email">
+          </div>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="play">Play</label>
+          <select id="play" name="play">
+            <option>Pick your play</option>
+            <option value="hamilton">Hamilton</option>
+            <option value="theLionKing">The Lion King</option>
+            <option value="theBookOfMormon">The Book of Mormon</option>
+            <option value="wicked">Wicked</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="Location">Location</label>
+          <input type="text" class="form-control" id="location">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="showdate" class="field-label">Show Date</label>
+          <label for="showdate" class="field prepend-icon">
+            <input type="date" id="showdate" name="showdate" class="gui-input" required="" placeholder="mm/dd/yyyy">
+            <span class="field-icon"><i class="fa fa-calendar"></i></span>  
+          </label>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="showtime" class="field-label">Time</label>
+          <label for="showtime" class="field prepend-icon">
+            <input type="time" id="showtime" name="showdate" class="gui-input" required="" placeholder="mm/dd/yyyy">
+            <span class="field-icon"><i class="fa fa-time"></i></span>  
+          </label>
+        </div>
+      </div>
+      <div class="col-50">
+        <h3>Payment</h3>
+        <label for="fname">Accepted Cards</label>
+        <div class="icon-container">
+                <img src="visa.png" id="visa">
+                <img src="assets/images/mastercard.jpg" id="mastercard">
+                <img src="assets/images/amex.jpg" id="amex">
+            </div>
+        </div>
+      
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              I agree to all terms and conditions
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Book Now</button>
+      </form>
 
     <footer>
-      <ul>
-        <li><a href="">temp</a></li>
-        <li><a href="">temp</a></li>
-        <li><a href="">temp</a></li>
-      </ul>
+      
     </footer>
+     <!-- j query -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
