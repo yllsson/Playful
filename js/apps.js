@@ -38,6 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
             case wicked.id: 
             wicked.style.backgroundImage = "url(pics/wicked.jpg)";
             break;
+
+            default: console.log("Missing case", ddValue);
         }
 
     });
