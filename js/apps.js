@@ -49,3 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function goToBooking() {
     window.location="pages/booking.html";
 };
+
+function show_alert() {
+    alert("Thanks for getting in touch. Someone will contact you shortly to help with your query.");
+  };

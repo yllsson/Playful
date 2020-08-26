@@ -145,6 +145,14 @@ select {
   height: 5vh;
 }
 
+.contactFormContainer {
+  /* this code is to center the form on the contact page on top of the image divs*/
+  position: absolute;
+  align-self: center;
+  padding: 10px;
+  text-align: center;
+  text-decoration-color:white;
+}
 
 /* Footer styling */
 
@@ -157,3 +165,11 @@ select {
   display: inline-block;
   margin-right: 10px;
 }
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  }
+  .socialMedia a{
+    padding: 5px 5px 5px 5px;
+  }
