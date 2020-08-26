@@ -17,15 +17,48 @@
     </nav>
 
     <main>
+      <div class="imgContainer">
+        <div class="hamilton frontPageImages" id="hamilton"></div>
+        <div class="lionKing frontPageImages" id="lionKing"></div>
+        <div class="bookOfMormon frontPageImages" id="bookOfMormon"></div>
+        <div class="wicked frontPageImages" id="wicked"></div>
+      
+      <form class="contactFormContainer">
+        <h2>Get in Touch</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email"><br>
+
+        <label for="query">How can we help?</label>
+        <select class="formInput" id="query" name="query">
+          <option value="">Please Select</option>
+          <option value="Change my booking">Change my booking</option>
+          <option value="Cancel my booking">Cancel my booking</option>
+          <option value="Refund">Refund</option>
+          <option value="Other">Other</option>
+        </select><br>
+        <label for="bookingReference">Booking Reference</label>
+        <input type="text" id="bookingReference" name="bookingReference"><br>
+
+        <input type="submit" name="submit" onclick="show_alert();" value="Submit">
+      </form>
 
     </main>
 
     <footer>
-      <ul>
-        <li><a href="">temp</a></li>
-        <li><a href="">temp</a></li>
-        <li><a href="">temp</a></li>
-      </ul>
+      <div class="socialMedia">
+        <a href="https://www.instagram.com/?hl=en">
+          <img src="../Instagram.jpeg" alt="instagram" width="40" height="40"> 
+        </a>
+        <a href="https://www.facebook.com/">
+          <img src="../Facebook.png" alt="facebook" width="40" height="40">
+        </a>
+        <a href="https://twitter.com/?lang=en-gb">
+          <img src="../twitter.png" alt="twitter" width="40" height="40">
+        </a>
+      </div>
     </footer>
   </body>
 </html>
