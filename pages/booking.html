@@ -20,7 +20,7 @@
 
     <main>
  <!-- Booking Form -->
-      <form>
+      <form class="bookingform">
         <div class="form-row">
           <div class="form-group col-md-4">
             <label for="name">Name</label>
@@ -31,7 +31,7 @@
             <input type="text" class="form-control" id="email">
           </div>
         </div>
-
+        <div class="form-row">
         <div class="form-group col-md-4">
           <label for="inputAddress">Address</label>
           <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
@@ -41,7 +41,7 @@
           <label for="inputAddress2">Address 2</label>
           <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
         </div>
-
+        </div>
         <div class="form-row">
           <div class="form-group col-md-4">
             <label for="inputCity">City</label>
@@ -55,14 +55,13 @@
               <option>...</option>
             </select>
           </div>
-
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
         </div>
 
-
+        <div class="form-row">
         <div class="form-group col-md-2">
           <label for="play">Play</label>
           <select id="play" name="play">
@@ -78,7 +77,8 @@
           <label for="Location">Location</label>
           <input type="text" class="form-control" id="location">
         </div>
-
+      </div>
+      <div class="form-row">
         <div class="form-group col-md-2">
           <label for="showdate" class="field-label">Show Date</label>
           <label for="showdate" class="field prepend-icon">
@@ -100,9 +100,9 @@
         <h3>Payment</h3>
         <label for="fname">Accepted Cards</label>
         <div class="icon-container">
-          <img src="../pics/visa.png" id="visa">
-          <img src="../pics/mastercard.png" id="mastercard">
-          <img src="../pics/amex.png" id="amex">
+          <img src="../pics/visa.png" id="visa" alt ="visa" width = "70" height = "50">
+          <img src="../pics/mastercard.png" id="mastercard" alt ="mastercard" width = "70" height = "50">
+          <img src="../pics/amex.png" id="amex" alt ="amex" width = "70" height = "50">
         </div>
       </div>
       

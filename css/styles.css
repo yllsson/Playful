@@ -154,6 +154,11 @@ select {
   text-decoration-color:white;
 }
 
+.bookingform {
+ 
+  color: rgb(247, 191, 7);
+}
+
 /* Footer styling */
 
 .footerContainer {
